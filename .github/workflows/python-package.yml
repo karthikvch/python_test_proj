@@ -5,8 +5,9 @@ name: Tag Triggered Workflow
 
 on:
   push:
-    tags:
-      - 'v*'  # This will match tags starting with 'v'
+      tags:
+        - 'release/*'
+
 
 jobs:
   build:
