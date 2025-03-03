@@ -28,6 +28,7 @@ jobs:
         run: |
           echo "Minor version v2 was pushed."
 
+          
       - name: Else - General Tag
         if: ${{ !startsWith(github.ref, 'refs/tags/v1') && !startsWith(github.ref, 'refs/tags/v2') }}
         run: |
